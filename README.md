@@ -7,7 +7,9 @@ https://ai-poet.com
 ## Introduction
 We are a Chinese couple living in California. We love traditional Chinese poems, and we had this idea of training an AI model to write couplets, an easier version of poems per se.
 
-There are several projects on AI couplet writing (see references below), but this project is the first of its kind written in TensorFlow 2.x, to the best of our knowledge.
+There are several projects on AI couplet writing (see references below), but this project is unique in the following ways
+- This is the first of its kind written in TensorFlow 2.x, to the best of our knowledge
+- This model improves from the reference models mostly on (i) emotional (意境) matching; (ii) repeated characters treatment (see the **Model** section below)
 
 ## Examples
 
