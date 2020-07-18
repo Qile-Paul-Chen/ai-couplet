@@ -10,7 +10,7 @@ https://ai-poet.com
   - See the [Wikipedia](https://en.wikipedia.org/wiki/Antithetical_couplet) (English) page for more details
 
 - What is this project for
-  - The model will predict the second line () given the first line ()
+  - The model will predict the second line (下联) given the first line (上联)
   - We are a Chinese couple living in California and we love traditional Chinese poems!
   - There are several projects on AI couplet writing (see references below), but this project is unique in the following ways
     - This is the first of its kind written in TensorFlow 2, to the best of our knowledge
