@@ -5,11 +5,16 @@ Welcome! This is our fun project of using AI to write couplets (对对联). Plea
 https://ai-poet.com
 
 ## Introduction
-We are a Chinese couple living in California. We love traditional Chinese poems, and we had this idea of training an AI model to write couplets, an easier version of poems per se.
+- What is couplet (对联)
+  - Couplet is a two-liner poem with strict semantic and phoenetic rules
+  - See the [Wikipedia](https://en.wikipedia.org/wiki/Antithetical_couplet) (English) page for more details
 
-There are several projects on AI couplet writing (see references below), but this project is unique in the following ways
-- This is the first of its kind written in TensorFlow 2.x, to the best of our knowledge
-- This model improves from the reference models mostly on (i) emotional (意境) matching; (ii) repeated characters treatment (see the **Model** section below)
+- What is this project for
+  - The model will predict the second line () given the first line ()
+  - We are a Chinese couple living in California and we love traditional Chinese poems!
+  - There are several projects on AI couplet writing (see references below), but this project is unique in the following ways
+    - This is the first of its kind written in TensorFlow 2, to the best of our knowledge
+    - This model improves from the reference models mostly on (i) emotional (意境) matching; (ii) repeated characters treatment (see the **Model** section below)
 
 ## Examples
 
@@ -35,18 +40,19 @@ Notable features
 - Beam search decoder
 - Format polishing to prevent repeated characters, etc.
 
-## Data
-The training/test data are around 70k couplets from [this](https://github.com/wb14123/couplet-dataset) repo
-
-## How to Run
-Set up the config at the **baseconfig.ini**, and run as **python train.py**
-Our model on the website was trained on Google Colab Pro for 12 epochs (~1 day)
-
-Package pre-requisites
-- TensorFlow 2.2.0
-- Python 3.6.9
-- Numpy 1.18.5
-- Gensim 3.6.0
+## Data & How to Run
+- Download the training data (~70k couplets) from [this](https://github.com/wb14123/couplet-dataset) repo
+- Set up the model hyperparameters and the file paths in the **baseconfig.ini**
+- Install the package dependencies
+  - **TensorFlow 2.2.0**
+  - Python 3.6.9
+  - Numpy 1.18.5
+  - Gensim 3.6.0
+  - Scikit-Learn 0.22.0
+- Train the model
+  - Run as ```python train.py```
+  - The model parameters will be written to the path set up in the config file
+  - Our model on the website was trained on Google Colab Pro for 12 epochs (~1 day)
 
 ## Reference
 - Seq2seq-couplet by Bin Wang ([Github](https://github.com/wb14123/seq2seq-couplet), [website](https://ai.binwang.me/couplet))
