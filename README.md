@@ -12,7 +12,7 @@ https://ai-poet.com
 - What is this project for
   - The model will predict the second line (下联) given the first line (上联)
   - We are a Chinese couple living in California and we love traditional Chinese poems!
-  - There are several projects on AI couplet writing (see references below), but this project is unique in the following ways
+  - This project improves from similar ones (see Reference for their great work) on:
     - This is the first of its kind written in TensorFlow 2, to the best of our knowledge
     - This model improves from the reference models mostly on (i) emotional (意境) matching; (ii) repeated characters treatment (see the **Model** section below)
 
@@ -20,9 +20,9 @@ https://ai-poet.com
 
 |     Input     |     Output    |
 | ------------- | ------------- |
-| 欲把心事付瑶琴  |  且把相思作知己  |
+| 欲把心事付瑶琴  |  且将笔墨书诗画  |
 | 半衾幽梦香初散  |  一曲清音韵未央  |
-| 应是飞鸿踏泥雪  |  何如落雁寄秋风  |
+| 应是飞鸿踏泥雪  |  何如落雁归故乡  |
 | 云破月来花弄影  |  雨停风送柳含烟  |
 | 别后相思空一水  |  愁中寂寞又几回  |
 | 书中自有黄金屋  |  笔下常留白玉簪  |
